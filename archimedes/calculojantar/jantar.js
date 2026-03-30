@@ -10,8 +10,8 @@ function btCalcular(){
     var txCarcom = inConta * 0.1
     var valorTotal = valorConta + txCarcom
 
-    outTotalconta.innerHTML="Taxa do Garçom R$" + txCarcom
-    <br> 
+    outTotalconta.innerHTML="Taxa do Garçom R$" + txCarcom + "<br>Valor Total da Conta R$" + valorTotal
+    
 
 
 }
