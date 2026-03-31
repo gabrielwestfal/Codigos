@@ -11,7 +11,7 @@ function btCalcular(){
     var valorTotal = valorConta + txCarcom
 
     outTotalconta.innerHTML="Taxa do Garçom R$" + txCarcom + "<br>Valor Total da Conta R$" + valorTotal
-    
+    // comentário
 
 
 }
