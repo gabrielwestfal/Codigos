@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste</title>
+    <title>Cadastro do aluno</title>
 </head>
 <body>
-    <form action="">
+    <header>
+        <h1>Cadastro do Aluno</h1>
+    </header>
+    <main>
+        <form action="">
         <style>
         input:valid {
             border: 2px solid green;
@@ -21,10 +25,47 @@
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" minlength="2" required>
          <br><br>
+
+
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
-        <label for="idade">Informe sua idade:</label>
-        <input type="number" id="idade" name="idade" min="0" required>
+
+
+        <label for="idade">Informe sua Senha:</label>
+        <input type="password" id="inSenha" name="senha" min="0" required> <br><br>
+
+        <label for="telefone">Informe seu Numero de Telefone:</label>
+        <input type="tel" id="inTelefone" name="telefone" required><br><br>
+        
+
+        <label for="curso">Informe seu Curso:</label>
+        <select name="curso" id="inCurso" required>
+            <option value="">Selecione um curso</option>
+            <option value="cursoMedvet">Medicina Veterinária</option>
+            <option value="cursoAgro">Agronomia</option>
+            <option value="cursoTsi">Tecnologia da Informação</option>
+        </select><br><br>
+
+
+        <label for="sexo">Informe seu sexo</label>
+        <input type="radio" id="inSexoMasculino" name="sexo" value="masculino" required>
+        <label for="inSexoMasculino">Masculino</label>
+        <input type="radio" id="inSexoFeminino" name="sexo" value="feminino" required>
+        <label for="inSexoFeminino">Feminino</label>
+        <input type="radio" id="inSexoOutro" name="sexo" value="outro" required>
+        <label for="inSexoOutro">Outro</label>
+        <br><br>
+
+        <label for="habilidades">Habilidades:</label>
+        <input type="checkbox" id="habilidade1" name="habilidades" value="habilidade1">
+        <label for="habilidade1">Escrever</label>
+        <input type="checkbox" id="habilidade2" name="habilidades" value="habilidade2">
+        <label for="habilidade2">Ler</label>
+        <input type="checkbox" id="habilidade3" name="habilidades" value="habilidade3">
+        <label for="habilidade3">Programar</label> <br><br>
+
+        <label for="informacoesAdicionais">Informações Adicionais:</label>
+        <textarea id="informacoesAdicionais" name="informacoesAdicionais" rows="4" cols="50"></textarea><br><br>
 
         <input type="submit" value="Enviar">
     </form>
